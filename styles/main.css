@@ -37,7 +37,7 @@ body .advice-area .container {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 15px 5px;
+  padding: 15px 50px;
 }
 body .advice-area .container .title {
   color: var(--Neon_Green);
