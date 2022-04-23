@@ -60,6 +60,9 @@ body .advice-area .container .diviser {
   align-items: center;
   justify-content: center;
 }
+body .advice-area .container .diviser img {
+  width: 100%;
+}
 body .advice-area .container .button-area {
   width: 100%;
   display: flex;
