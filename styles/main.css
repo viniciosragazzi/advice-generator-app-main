@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Light_Cyan: hsl(193, 38%, 86%);
+  --Neon_Green: hsl(150, 100%, 66%);
+  --Grayish_Blue: hsl(217, 19%, 38%);
+  --Dark_Grayish_Blue: hsl(217, 19%, 24%);
+  --Dark_Blue: hsl(218, 23%, 16%);
+}
+
+body {
+  height: 100vh;
+  background-color: var(--Dark_Blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Manrope", sans-serif;
+}
+body .advice-area {
+  display: grid;
+  width: 520px;
+  min-width: 340px;
+  height: 320px;
+  background-color: var(--Dark_Grayish_Blue);
+  border-radius: 14px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+body .advice-area .container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px 5px;
+}
+body .advice-area .container .title {
+  color: var(--Neon_Green);
+  font-size: 13px;
+  letter-spacing: 4px;
+  font-weight: 600;
+}
+body .advice-area .container .advice p {
+  font-weight: 800;
+  font-size: min(6vw, 28px);
+  color: var(--Light_Cyan);
+  opacity: 0;
+  top: 10px;
+  -webkit-animation: show 0.5s ease forwards;
+          animation: show 0.5s ease forwards;
+}
+body .advice-area .container .diviser {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+body .advice-area .container .button-area {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+body .advice-area .container .button-area .button {
+  width: 60px;
+  height: 60px;
+  background-color: var(--Neon_Green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  transition: 0.3s ease-in-out box-shadow;
+  top: 10px;
+}
+body .advice-area .container .button-area .button:hover {
+  cursor: pointer;
+  box-shadow: var(--Neon_Green) 0px 2px 38px, var(--Neon_Green) 0px 0px 12px;
+}
+body .rotate {
+  -webkit-animation: rotate 0.6s ease-out;
+          animation: rotate 0.6s ease-out;
+}
+
+@media (max-width: 540px) {
+  body .advice-area .container {
+    padding: 15px 25px;
+  }
+
+  body .advice-area {
+    margin: 0 20px;
+  }
+}
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes show {
+  from {
+    top: 0;
+    opacity: 0;
+  }
+  to {
+    top: 10px;
+    opacity: 1;
+  }
+}
+@keyframes show {
+  from {
+    top: 0;
+    opacity: 0;
+  }
+  to {
+    top: 10px;
+    opacity: 1;
+  }
+}/*# sourceMappingURL=main.css.map */
