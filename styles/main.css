@@ -59,7 +59,6 @@ body .advice-area .container .diviser {
   display: flex;
   align-items: center;
   justify-content: center;
-  display: none;
 }
 body .advice-area .container .button-area {
   width: 100%;
